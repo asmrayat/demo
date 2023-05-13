@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/cover"
+    >
+
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_margin="30dp"
+        android:layout_gravity="end"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/setting_icon"
+
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:text="Death Note"/>
+            <ImageView
+
+                android:layout_gravity="start"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/top"
+                >
+
+            </ImageView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/bottomText"
+                android:textSize="20dp"
+                android:layout_margin="20dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Death Note is a masterpiece of a thriller anime series, with a unique premise and complex characters that leave a lasting impression. The story follows the intelligent and ambitious high school student, Light Yagami, who comes across a supernatural notebook that grants him the power to kill anyone whose name he writes in it. He decides to use this power to rid the world of criminals and become a god-like figure known as Kira. However, his actions catch the attention of a brilliant detective known only as L, who is determined to bring him to justice.
+
+The series' plot is filled with twists and turns that keep viewers on the edge of their seats, as Light and L engage in a psychological battle of wits that is both thrilling and intellectually stimulating. The series delves into complex themes such as morality, justice, and power, forcing viewers to question their own beliefs about these topics.
+
+The characters in Death Note are also well-developed and intriguing,"
+                ></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

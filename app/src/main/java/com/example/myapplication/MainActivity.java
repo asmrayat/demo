@@ -8,11 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     ImageView set ;
-    LinearLayout back;
+    public static LinearLayout backPic;
+    public static TextView top,bottom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,13 +22,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         set = findViewById(R.id.setting);
-        back = findViewById(R.id.cover);
+        backPic = findViewById(R.id.cover);
+        top = findViewById(R.id.headerText);
+        bottom = findViewById(R.id.bottomText);
+
+
 
         set.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SettingActivity.class);
-                startActivity(intent);
+
+                startActivity(new Intent(MainActivity.this, SettingActivity.class));
+//                top.setTextColor(getColor(R.color.red));
             }
         });
     }
